@@ -23,8 +23,7 @@ int main()
     do
     {
 
-        cout << "=========================================== MENU =========================================" << endl;
-        cout << endl;
+        cout << "========================================== MENU ==========================================" << endl;
         cout << "   ====================================================================================" << endl;
         cout << " || 1. Menambahkan Kereta Api Baru                                                     ||" << endl;
         cout << " || 2. Tampilkan Daftar Kereta Api                                                     ||" << endl;
@@ -41,87 +40,89 @@ int main()
         cout << " || 13. Menampilkan Kereta Api yang Paling Sering Mengunjungi Stasiun Tertentu         ||" << endl;
         cout << " || 0. Keluar                                                                          ||" << endl;
         cout << "   ====================================================================================" << endl;
+        cout << endl;
         cout << " Ketik Pilihan Anda : ";
         cin >> n;
         cout << endl;
         switch(n)
         {
         case 1 :
-            {
-                system("cls");
-                char krl[100];
-                cout << "Masukan Nama Kereta Api : ";
-                cin.ignore();
-                cin.getline(krl, 100);
-                address_parent P = allocateparent(krl);
-                insertLastParent(kereta, P);
-                break;
-            }
+        {
+            system("cls");
+            char krl[100];
+            cout << "Masukan Nama Kereta Api : ";
+            cin.ignore();
+            cin.getline(krl, 100);
+            address_parent P = allocateparent(krl);
+            insertLastParent(kereta, P);
+            break;
+        }
         case 2 :
-            {
-               system("cls");
-               printInfoParent(kereta);
-               break;
-            }
+        {
+            system("cls");
+            printInfoParent(kereta);
+            break;
+        }
         case 3 :
-            {
-                system("cls");
-                char stas[100];
-                cout << "Masukan Nama Stasiun : ";
-                cin.ignore();
-                cin.getline(stas, 100);
-                address_child P = allocatechild(stas);
-                insertLastChild(stasiun, P);
-                break;
-            }
+        {
+            system("cls");
+            char stas[100];
+            cout << "Masukan Nama Stasiun : ";
+            cin.ignore();
+            cin.getline(stas, 100);
+            address_child P = allocatechild(stas);
+            insertLastChild(stasiun, P);
+            break;
+        }
         case 4 :
-            {
-                system("cls");
-                printInfoChild(stasiun);
-                break;
-            }
+        {
+            system("cls");
+            printInfoChild(stasiun);
+            break;
+        }
         case 5 :
-            {
-                system("cls");
-                printInfoParent(kereta);
-                char krl[100];
-                cout << "Ketik Nama Kereta: ";
-                cin.ignore();
-                cin.getline(krl,100);
-                address_parent P = findElmParent(kereta, krl);
-                printInfoChild(stasiun);
-                char stas[100];
-                cout << "Ketik Nama Stasiun: ";
-                cin.getline(stas, 100);
-                address_child Q = findElmChild(stasiun, stas);
-                address_relasi R = allocaterelasi(P, Q);
-                insertLastRelasi(rel, R);
-                cout << "Relasi Berhasil Dibuat" << endl;
-                break;
-            }
+        {
+            system("cls");
+            printInfoParent(kereta);
+            char krl[100];
+            cout << "Ketik Nama Kereta: ";
+            cin.ignore();
+            cin.getline(krl,100);
+            address_parent P = findElmParent(kereta, krl);
+            printInfoChild(stasiun);
+            char stas[100];
+            cout << "Ketik Nama Stasiun: ";
+            cin.getline(stas, 100);
+            address_child Q = findElmChild(stasiun, stas);
+            address_relasi R = allocaterelasi(P, Q);
+            insertLastRelasi(rel, R);
+            cout << "Relasi Berhasil Dibuat" << endl;
+            break;
+        }
         case 6 :
-            {
-                system("cls");
-                printInfoRelasi(rel);
-                break;
-            }
+        {
+            system("cls");
+            printInfoRelasi(rel);
+            break;
+        }
         case 7 :
+        {
+            string pilih;
+            printInfoRelasi(rel);
+            cout << "Hapus first / after / last ?" << endl;
+            cin >> pilih;
+            if (pilih == "first")
             {
-                string pil;
+                address_relasi P = first(rel);
+                deleteFirstRelasi(rel, P);
+                cout << "Relasi berhasil dihapus" << endl;
                 printInfoRelasi(rel);
-                cout << "Hapus first / after / last ?" << endl;
-                cin >> pil;
-                if (pil == "first") {
-                    address_relasi P = first(rel);
-                    deleteFirstRelasi(rel, P);
-                    cout << "R h velasi berhasil dihapus" << endl;
-                    printInfoRelasi(rel);
-                }
-                break;
             }
+            break;
+        }
 
         case 8 :
-            {
+        {
             system("cls");
             printInfoParent(kereta);
             char krl[100];
@@ -133,7 +134,7 @@ int main()
             break;
         }
         case 9 :
-            {
+        {
             system("cls");
             printInfoChild(stasiun);
             char stas[100];
@@ -144,7 +145,8 @@ int main()
             deleteChild(stasiun, P);
             break;
         }
-        case 10 : {
+        case 10 :
+        {
             system("cls");
             printInfoParent(kereta);
             char krl[100];
@@ -154,12 +156,14 @@ int main()
             showStasiun(rel, krl);
             break;
         }
-        case 11 : {
+        case 11 :
+        {
             system("cls");
             duakaliStasiun(kereta, rel, stasiun);
             break;
         }
-        case 12 : {
+        case 12 :
+        {
             system("cls");
             stasiunTerbanyak(stasiun, rel);
             break;

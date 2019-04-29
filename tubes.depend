@@ -89,3 +89,25 @@
 	"LIST_PARENT.h"
 	<windows.h>
 
+1556566566 source:c:\users\mangrio\documents\github\tubes-std(fix)\list_child.cpp
+	"LIST_CHILD.h"
+
+1556566583 c:\users\mangrio\documents\github\tubes-std(fix)\list_child.h
+	<iostream>
+
+1556566566 source:c:\users\mangrio\documents\github\tubes-std(fix)\list_parent.cpp
+	"LIST_PARENT.h"
+
+1556566566 c:\users\mangrio\documents\github\tubes-std(fix)\list_parent.h
+	<iostream>
+
+1556566566 source:c:\users\mangrio\documents\github\tubes-std(fix)\list_relasi.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+
+1556567164 c:\users\mangrio\documents\github\tubes-std(fix)\list_relasi.h
+	"list_relasi.h"
+	"list_child.h"
+	"list_parent.h"
+	<iostream>
+

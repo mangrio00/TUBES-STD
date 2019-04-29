@@ -13,18 +13,19 @@ using namespace std;
 typedef string infotype_child;
 typedef struct elmlist_child *address_child;
 
-struct elmlist_child{
+struct elmlist_child
+{
     infotype_child info;
     address_child next;
     address_child prev;
 };
 
-struct List_child{
+struct List_child
+{
     address_child first;
     address_child last;
 };
 
-/** TIDAK PERLU MODIFIKASI */
 void createListChild(List_child &L);
 address_child allocatechild(infotype_child x);
 void deallocate(address_child &P);

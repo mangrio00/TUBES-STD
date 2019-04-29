@@ -13,13 +13,15 @@ using namespace std;
 typedef string infotype_parent;
 typedef struct elmlist_parent *address_parent;
 
-struct elmlist_parent {
+struct elmlist_parent
+{
     infotype_parent info;
     address_parent next;
     address_parent prev;
 };
 
-struct List_parent {
+struct List_parent
+{
     address_parent first;
     address_parent last;
 };
