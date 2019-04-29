@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1554454289 source:d:\tubestubes\tubes\tubes.cpp
+	"tubes.h"
+
+1554454289 d:\tubestubes\tubes\tubes.h
+	<iostream>
+
+1556198933 source:d:\tubestubes\tubes\list_child.cpp
+	"LIST_CHILD.h"
+
+1555834878 d:\tubestubes\tubes\list_child.h
+	<iostream>
+
+1556300612 source:d:\tubestubes\tubes\list_parent.cpp
+	"LIST_PARENT.h"
+
+1555836720 d:\tubestubes\tubes\list_parent.h
+	<iostream>
+
+1556307410 source:d:\tubestubes\tubes\list_relasi.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+
+1556269266 d:\tubestubes\tubes\list_relasi.h
+	"list_relasi.h"
+	"list_child.h"
+	"list_parent.h"
+	<iostream>
+
+1556306941 source:d:\tubestubes\tubes\main.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+	"LIST_PARENT.h"
+	<windows.h>
+
+1556560306 source:e:\tubes lieur\tubes\list_child.cpp
+	"LIST_CHILD.h"
+
+1555834880 e:\tubes lieur\tubes\list_child.h
+	<iostream>
+
+1556560306 source:e:\tubes lieur\tubes\list_parent.cpp
+	"LIST_PARENT.h"
+
+1555836722 e:\tubes lieur\tubes\list_parent.h
+	<iostream>
+
+1556561225 source:e:\tubes lieur\tubes\main.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+	"LIST_PARENT.h"
+	<windows.h>
+
+1556558285 e:\tubes lieur\tubes\list_relasi.h
+	"list_relasi.h"
+	"list_child.h"
+	"list_parent.h"
+	<iostream>
+
+1556559998 source:e:\tubes lieur\tubes\list_relasi.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+
+1556560306 source:e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_child.cpp
+	"LIST_CHILD.h"
+
+1555834880 e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_child.h
+	<iostream>
+
+1556560306 source:e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_parent.cpp
+	"LIST_PARENT.h"
+
+1555836722 e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_parent.h
+	<iostream>
+
+1556559998 source:e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_relasi.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+
+1556558285 e:\telkom university\semester 2\struktur data\kereta api\kereta api\list_relasi.h
+	"list_relasi.h"
+	"list_child.h"
+	"list_parent.h"
+	<iostream>
+
+1556563334 source:e:\telkom university\semester 2\struktur data\kereta api\kereta api\main.cpp
+	"LIST_RELASI.h"
+	"LIST_CHILD.h"
+	"LIST_PARENT.h"
+	<windows.h>
+
